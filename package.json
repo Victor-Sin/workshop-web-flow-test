@@ -1,8 +1,7 @@
 {
-    "name": "workshop-one-page-to-life",
-    "version": "0.0.1",
-    "description": "Front-end development: Bringing a one-page design to life. A workshop by Locomotive Inc.",
-    "keywords": [],
+    "name": "workshop-web-flow-test",
+    "version": "0.1.0",
+    "description": "External Web Components and styles loaded by Webflow via jsDelivr. Based on the Locomotive workshop \"Bringing a one-page design to life\".",
     "author": "Locomotive Inc.",
     "license": "ISC",
     "type": "module",
@@ -11,27 +10,12 @@
         "npm": ">=8.0"
     },
     "scripts": {
-        "build:webflow": "node build/webflow.js",
-        "start": "node --experimental-json-modules --no-warnings build/watch.js",
-        "build": "node --experimental-json-modules --no-warnings build/build.js"
+        "build:webflow": "node build/webflow.js"
     },
     "dependencies": {
-        "gsap": "^3.12.2",
-        "locomotive-scroll": "^5.0.0-beta.8",
-        "modujs": "^1.4.2",
-        "normalize.css": "^8.0.1",
         "three": "^0.155.0"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^2.0.1",
-        "@factorial/eleventy-plugin-twig": "^0.1.2",
-        "browser-sync": "^2.29.3",
-        "esbuild": "^0.19.0",
-        "kleur": "^4.1.5",
-        "sass": "^1.65.1",
-        "twig": "^1.16.0"
-    },
-    "stackblitz": {
-        "startCommand": "npm start"
+        "esbuild": "^0.19.0"
     }
 }
