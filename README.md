@@ -27,10 +27,10 @@ Files are served at `https://cdn.jsdelivr.net/gh/Victor-Sin/workshop-web-flow-te
 Add a single embed inside `<main>` of the page:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Victor-Sin/workshop-web-flow-test@webflow-v0.1.0/webflow/dist/home.css">
-<script type="module" src="https://cdn.jsdelivr.net/gh/Victor-Sin/workshop-web-flow-test@webflow-v0.1.0/webflow/dist/c-grid-mosaic.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/gh/Victor-Sin/workshop-web-flow-test@webflow-v0.1.0/webflow/dist/c-collection-product.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/gh/Victor-Sin/workshop-web-flow-test@webflow-v0.1.0/webflow/dist/c-splash-scene.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Victor-Sin/workshop-web-flow-test@webflow-v0.1.1/webflow/dist/home.css">
+<script type="module" src="https://cdn.jsdelivr.net/gh/Victor-Sin/workshop-web-flow-test@webflow-v0.1.1/webflow/dist/c-grid-mosaic.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/Victor-Sin/workshop-web-flow-test@webflow-v0.1.1/webflow/dist/c-collection-product.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/Victor-Sin/workshop-web-flow-test@webflow-v0.1.1/webflow/dist/c-splash-scene.js"></script>
 ```
 
 It must live in `<main>` so that the Swup scripts plugin re-runs it on page transitions.
