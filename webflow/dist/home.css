@@ -1,0 +1,1 @@
+[data-product=item]{transform:translate3d(0,calc(var(--py, 0) * 1px),0)}[data-product=container] .w-dyn-items.w-row:before,[data-product=container] .w-dyn-items.w-row:after{content:none;display:none}c-splash-scene canvas{display:block;width:100%;height:100%;pointer-events:none}

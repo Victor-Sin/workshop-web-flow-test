@@ -11,6 +11,7 @@
         "npm": ">=8.0"
     },
     "scripts": {
+        "build:webflow": "node build/webflow.js",
         "start": "node --experimental-json-modules --no-warnings build/watch.js",
         "build": "node --experimental-json-modules --no-warnings build/build.js"
     },

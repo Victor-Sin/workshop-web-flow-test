@@ -1,0 +1,28 @@
+/* Home Copy: styles shared by the external Web Components.
+   Merged from the former Home embeds and the workshop _splash-featured.scss. */
+
+/* ==========================================================================
+   Products (<c-collection-product>)
+   ========================================================================== */
+[data-product="item"] {
+    transform: translate3d(0, calc(var(--py, 0) * 1px), 0);
+}
+
+/* Webflow adds .w-row on the Collection List: its ::before/::after
+   (display: table, grid-area: 1/1) take the first cell of a grid and
+   shift the first item. */
+[data-product="container"] .w-dyn-items.w-row::before,
+[data-product="container"] .w-dyn-items.w-row::after {
+    content: none;
+    display: none;
+}
+
+/* ==========================================================================
+   Splash scene (<c-splash-scene>)
+   ========================================================================== */
+c-splash-scene canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
