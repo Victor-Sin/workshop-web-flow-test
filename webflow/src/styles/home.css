@@ -2,58 +2,6 @@
    Merged from the former Home embeds and the workshop _splash-featured.scss. */
 
 /* ==========================================================================
-   Grid mosaic (<c-grid-mosaic>) - simple layout on mobile landscape and below
-   The convergence animation is desktop/tablet only (see c-grid-mosaic.js,
-   same 767px breakpoint). Below it, the Webflow styles turn the grid into a
-   50vh flex row inside a 1000vh sticky track, which ends up blank/cropped.
-   Reset the whole chain (track > wrapper > sticky element > grid) to a plain
-   2-column grid in normal flow.
-   ========================================================================== */
-@media (max-width: 767px) {
-    [data-grid-mosaic="track"] {
-        height: auto !important;
-        min-height: 0 !important;
-        overflow: visible !important;
-    }
-
-    /* Wrapper holding the Grid mosaic component (absolute + 110% height in Webflow) */
-    [data-grid-mosaic="track"] > :has(c-grid-mosaic),
-    [data-grid-mosaic="track"] .grid-mosaic_root {
-        position: static !important;
-        width: 100% !important;
-        height: auto !important;
-        min-height: 0 !important;
-    }
-
-    c-grid-mosaic {
-        position: static !important;
-        height: auto !important;
-    }
-
-    [data-grid-mosaic="grid"] {
-        position: static !important;
-        transform: none !important;
-        container-type: normal !important;
-        display: grid !important;
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        grid-template-rows: none !important;
-        gap: var(--_grid---gutter, 1rem) !important;
-        width: 100% !important;
-        height: auto !important;
-        padding: 0 !important;
-    }
-
-    [data-grid-mosaic="item"] {
-        transform: none !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-    }
-}
-
-/* ==========================================================================
    Products (<c-collection-product>)
    ========================================================================== */
 [data-product="item"] {
